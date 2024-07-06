@@ -228,7 +228,7 @@ main div div {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   max-width: 295px;
 }
 main div div .Categories {
@@ -262,4 +262,104 @@ main div div div {
   height: 40px;
   justify-content: center;
   align-items: center;
+}
+main #blogs {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+main #blogs .blogs {
+  max-width: 400px;
+}
+main #blogs .blogs img {
+  width: 400px;
+}
+@media only screen and (max-width: 480px) {
+  main #blogs .blogs img {
+    width: 300px;
+    height: 200px;
+  }
+}
+main #blogs .blogs h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 16px;
+  margin-bottom: 13px;
+}
+main #blogs .blogs p {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+footer {
+  min-height: 310px;
+  width: 100%;
+  background-color: #A9AEDC;
+  position: absolute;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer h1 {
+  font-size: 48px;
+  font-weight: 800;
+  width: 247px;
+  margin: 41px 0 10px 100px;
+  color: #222222;
+}
+@media only screen and (max-width: 480px) {
+  footer h1 {
+    margin: 10px;
+  }
+}
+footer #instagram {
+  width: 56px;
+  height: 51px;
+  margin: 0 3.9px 0 98px;
+}
+@media only screen and (max-width: 480px) {
+  footer #instagram {
+    margin-left: 10px;
+  }
+}
+footer #facebook {
+  width: 48px;
+  height: 39.71px;
+  margin: 0 15px 0 0;
+}
+footer #twitter {
+  width: 48px;
+  height: 39.71px;
+  margin: 0 6.9px 0 0;
+}
+footer .tbc {
+  width: 64px;
+  height: 54px;
+}
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+footer div div {
+  display: flex;
+  flex-direction: row;
+}
+footer div a {
+  text-decoration: none;
+  height: 30px;
+}
+footer div a h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 100px;
+  color: #222222;
+}
+footer #column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+footer #links {
+  margin: 136px 100px 136px 0;
 }
