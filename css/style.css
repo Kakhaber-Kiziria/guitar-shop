@@ -170,7 +170,7 @@ main #first div {
   margin-left: 40px;
   max-width: 100%;
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   main #first div {
     margin: 0 auto;
   }
@@ -179,7 +179,7 @@ main #first div #img {
   width: 100%;
   height: 400px;
 }
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
   main #first div #img {
     height: 300px;
   }
@@ -189,7 +189,7 @@ main #first div h1 {
   font-weight: 800;
   margin: 0;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   main #first div h1 {
     color: white;
     position: relative;
@@ -200,7 +200,7 @@ main #first div h4 {
   font-size: 24px;
   font-weight: 400;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   main #first div h4 {
     color: white;
     position: relative;
@@ -213,8 +213,9 @@ main h1 {
   margin-top: 100px;
   margin-left: 50px;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   main h1 {
+    margin-top: 30px;
     margin-left: 20px;
   }
 }
@@ -224,6 +225,11 @@ main div {
   justify-content: space-around;
   margin-top: 30px;
 }
+@media (max-width: 480px) {
+  main div {
+    margin: 0;
+  }
+}
 main div a {
   text-decoration: none;
   color: black;
@@ -232,8 +238,13 @@ main div div {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   max-width: 295px;
+}
+@media (max-width: 480px) {
+  main div div {
+    margin-bottom: 2px;
+  }
 }
 main div div .Categories {
   width: 295px;
@@ -274,11 +285,12 @@ main #blogs {
 }
 main #blogs .blogs {
   max-width: 400px;
+  margin-bottom: 30px;
 }
 main #blogs .blogs img {
   width: 400px;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   main #blogs .blogs img {
     width: 300px;
     height: 200px;
@@ -311,7 +323,7 @@ footer h1 {
   margin: 41px 0 10px 100px;
   color: #222222;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   footer h1 {
     margin: 10px;
   }
@@ -321,7 +333,7 @@ footer #instagram {
   height: 51px;
   margin: 0 3.9px 0 98px;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   footer #instagram {
     margin-left: 10px;
   }
