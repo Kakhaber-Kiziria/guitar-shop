@@ -178,10 +178,6 @@ main {
         justify-content: space-around;
         margin-top: 30px;
 
-        @media (max-width:480px) {
-            margin: 0;
-        }
-
         a {
             text-decoration: none;
             color: black;
@@ -226,6 +222,15 @@ main {
                 justify-content: center;
                 align-items: center;
             }
+            #discount {
+                position: relative;
+                top: -473px;
+                left: 224px; 
+
+                @media (max-width:698px) {
+                    top: -430px;
+                }
+            }
         }
     }
     #blogs {
@@ -235,13 +240,13 @@ main {
 
         .blogs {
             max-width: 400px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
 
             img {
                 width: 400px;
 
                 @media (max-width:480px) {
-                    width: 300px;
+                    width: 90%;
                     height: 200px;
                 }
             }
