@@ -168,6 +168,7 @@ main {
 
         @media (max-width:480px) {
             margin-top: 30px;
+            margin-bottom: 20px;
             margin-left: 20px;
         }
     }
@@ -192,10 +193,6 @@ main {
             margin: 0 20px;
             margin-bottom: 30px;
             max-width: 295px;
-
-            @media (max-width:480px) {
-                margin-bottom: 2px;
-            }
 
             .Categories {
                 width: 295px;
