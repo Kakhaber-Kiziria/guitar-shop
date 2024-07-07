@@ -141,8 +141,12 @@ main {
 
         div {
             max-width: 605px;
-            margin: 0;
-            margin-right: 21px;
+            margin: 0 21px 40px 0;
+
+            @media (max-width: 480px) {
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
         }
     }
     h2 {
