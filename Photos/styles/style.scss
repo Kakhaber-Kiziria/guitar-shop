@@ -1,0 +1,213 @@
+@import "resetstyles";
+
+header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+
+
+        #brand-logo {
+
+            img {
+                width: 100px;
+                height: 70px;
+                margin-top: 10px;
+                margin-left: 60px;
+
+                @media (max-width: 480px) {
+                    margin-left: 30px;
+                }
+            }
+        }
+        #navbar-links {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            a {
+                color: #2935A7;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: 400;
+                margin-top: 10px;
+                margin-right: 80px;
+
+                @media (max-width: 480px) {
+                    margin: 0;
+                    padding: 15px 0;
+                    border-bottom: 1px solid #444;
+                }
+                @media (max-width: 815px) {
+                    margin-right: 30px;
+                }
+                @media (max-width: 660px) {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+            @media (max-width: 480px) {
+                display: none;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        #burger-toggle {
+            display: none;
+        }
+        label {
+            display: none;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            cursor: pointer;
+
+            span {
+                height: 3px;
+                width: 25px;
+                background-color: black;
+                margin: 4px 0;
+                -webkit-transition: 0.4s;
+                -o-transition: 0.4s;
+                transition: 0.4s;
+            }
+
+            @media (max-width: 480px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-right: 30px;
+            }
+            
+        }
+        @media (max-width: 480px) {
+            input:checked ~ #navbar-links {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+    }
+}
+main {
+    margin-top: 120px;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+    }
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        img {
+            width: 295px;
+            height: 400px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+
+            @media (max-width: 480px) {
+                margin-right: 0;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+footer {
+    min-height: 310px;
+    width: 100%;
+    background-color: #A9AEDC;
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+        width: 247px;
+        margin: 41px 0 10px 100px;
+        color: #222222;
+
+        @media only screen and (max-width:480px) {
+            margin: 10px;
+        }
+    }
+    #instagram {
+        width: 56px;
+        height: 51px;
+        margin: 0 3.9px 0 98px;
+
+        @media only screen and (max-width:480px) {
+            margin-left: 10px;
+        }
+    }
+    #facebook {
+        width: 48px;
+        height: 39.71px;
+        margin: 0 15px 0 0;
+    }
+    #twitter {
+        width: 48px;
+        height: 39.71px;
+        margin: 0 6.9px 0 0;
+    }
+    .tbc {
+        width: 64px;
+        height: 54px;
+    }
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 30px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        a {
+            text-decoration: none;
+            height: 30px;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 800;
+                margin-left: 100px;
+                color: #222222;
+            }
+        }
+    }
+    #column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+    }
+    #links {
+        margin: 136px 100px 136px 0;
+    }
+}

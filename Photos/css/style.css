@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+header nav #brand-logo img {
+  width: 100px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+@media (max-width: 480px) {
+  header nav #brand-logo img {
+    margin-left: 30px;
+  }
+}
+header nav #navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav #navbar-links a {
+  color: #2935A7;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+@media (max-width: 480px) {
+  header nav #navbar-links a {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+}
+@media (max-width: 815px) {
+  header nav #navbar-links a {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 660px) {
+  header nav #navbar-links a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  header nav #navbar-links {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+header nav #burger-toggle {
+  display: none;
+}
+header nav label {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+header nav label span {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 4px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (max-width: 480px) {
+  header nav label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 480px) {
+  header nav input:checked ~ #navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main {
+  margin-top: 120px;
+}
+main h1 {
+  font-size: 48px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+main div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main div img {
+  width: 295px;
+  height: 400px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  main div img {
+    margin-right: 0;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+footer {
+  min-height: 310px;
+  width: 100%;
+  background-color: #A9AEDC;
+  position: absolute;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer h1 {
+  font-size: 48px;
+  font-weight: 800;
+  width: 247px;
+  margin: 41px 0 10px 100px;
+  color: #222222;
+}
+@media only screen and (max-width: 480px) {
+  footer h1 {
+    margin: 10px;
+  }
+}
+footer #instagram {
+  width: 56px;
+  height: 51px;
+  margin: 0 3.9px 0 98px;
+}
+@media only screen and (max-width: 480px) {
+  footer #instagram {
+    margin-left: 10px;
+  }
+}
+footer #facebook {
+  width: 48px;
+  height: 39.71px;
+  margin: 0 15px 0 0;
+}
+footer #twitter {
+  width: 48px;
+  height: 39.71px;
+  margin: 0 6.9px 0 0;
+}
+footer .tbc {
+  width: 64px;
+  height: 54px;
+}
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+footer div div {
+  display: flex;
+  flex-direction: row;
+}
+footer div a {
+  text-decoration: none;
+  height: 30px;
+}
+footer div a h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 100px;
+  color: #222222;
+}
+footer #column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+footer #links {
+  margin: 136px 100px 136px 0;
+}
